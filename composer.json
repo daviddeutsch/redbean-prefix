@@ -1,0 +1,24 @@
+{
+	"name":              "daviddeutsch/redbean-prefix",
+	"description":       "For when you absolutely, positively need prefixes in RedBeanPHP",
+	"minimum-stability": "stable",
+	"version":           "1.0.0",
+	"license":           "BSD",
+	"authors": [
+		{
+			"name":     "David Deutsch",
+			"email":    "skore@valanx.org",
+			"homepage": "http://valanx.org",
+			"role":     "Chief Botanist"
+		}
+	],
+	"require": {
+		"gabordemooij/redbean": ">=3.2,<4.0"
+	},
+	"suggest": {
+		"daviddeutsch/redbean-instance": "Let's you have multiple RedBean instances running alongside eachother"
+	},
+	"autoload": {
+		"classmap": ["/src/RedBean_Prefix"]
+	}
+}
