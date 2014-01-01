@@ -12,11 +12,13 @@ names.
 ```php
 // Include or autoload the files in this library
 
+R::ext( 'prefix', array('RedBean_Prefix', 'prefix') );
+
 R::prefix('my_prefix_');
 
 // If you want to inject it into another instance of RB
 
 $r2db2 = R::instance();
 
-R::prefix('my_other_db_');
+$r2db2::prefix('my_other_db_', $r2db2);
 ```
