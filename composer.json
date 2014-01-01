@@ -16,7 +16,7 @@
 		"gabordemooij/redbean": ">=3.2,<4.0"
 	},
 	"suggest": {
-		"daviddeutsch/redbean-instance": "Let's you have multiple RedBean instances running alongside eachother"
+		"daviddeutsch/redbean-instance": "Let's you have multiple RedBean instances running alongside eachother."
 	},
 	"autoload": {
 		"classmap": ["/src/RedBean_Prefix"]
