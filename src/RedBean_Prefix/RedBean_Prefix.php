@@ -19,7 +19,6 @@ class RedBean_Prefix
 	 *
 	 * @param string $prefix
 	 * @param mixed  $facade null|RedBean_Facade
-	 * @param mixed  $adapter If specified, modify this facade instance
 	 */
 	public static function prefix( $prefix, $facade=null )
 	{
