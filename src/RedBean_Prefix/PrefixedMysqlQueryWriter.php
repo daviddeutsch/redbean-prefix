@@ -16,8 +16,15 @@ class PrefixedMysqlQueryWriter extends RedBean_QueryWriter_MySQL
 		$this->prefix = $prefix;
 	}
 
-	public function safeTable( $name, $noQuotes=false )
+	public function esc( $dbStructure, $dontQuote = FALSE )
 	{
-		return parent::safeTable($this->prefix . $name, $noQuotes);
+		$this->check( $dbStructure );
+
+		$table = $dbStructure;
+		if ( !empty( $this->prefix ) ) {
+			$table = $this->prefix . $table;
+		}
+
+		return ( $dontQuote ) ? $table : $this->quoteCharacter . $table . $this->quoteCharacter;
 	}
 }
