@@ -1,6 +1,6 @@
 <?php
 
-class PrefixedMysqlQueryWriter extends RedBean_QueryWriter_CUBRID
+class PrefixedCubridQueryWriter extends RedBean_QueryWriter_CUBRID
 {
 	protected $prefix;
 
