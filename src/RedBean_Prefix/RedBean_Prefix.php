@@ -1,5 +1,7 @@
 <?php
 
+use RedBean_Facade as R;
+
 class RedBean_Prefix
 {
 	/**
